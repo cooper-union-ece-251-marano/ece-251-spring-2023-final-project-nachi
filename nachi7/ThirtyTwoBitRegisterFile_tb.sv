@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`include "ThirtyTwoBitRegisterFile.sv"
+//`include "ThirtyTwoBitRegisterFile.sv"
 
 module ThirtyTwoBitRegisterFile_tb;
 
@@ -95,7 +95,7 @@ module ThirtyTwoBitRegisterFile_tb;
 		.WriteReg(addy), 
 		.WriteEn(En), 
 		.Clock(Clk), 
-		.WriteData(D),
+		.wd3(D),
 		.ReadReg1(addy2),
 		.ReadData1(Q1),
 		.ReadReg2(addy3),
